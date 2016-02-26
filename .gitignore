@@ -15,5 +15,8 @@
 /log/*
 !/log/.keep
 /tmp
+config/database.yml
+*.DS_Store
+*.swp
 
 vendor/bundle
