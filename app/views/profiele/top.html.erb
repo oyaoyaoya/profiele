@@ -23,14 +23,17 @@
           </a></li>
         </ul>
       </div>
-      <img src="<%= asset_path "/assets/LOGO.png" %>" alt=""  height="500px" />
+      <div class="logo">
+      <img src="<%= asset_path "/assets/LOGO.png" %>" alt="" id="logo"/>
+    </div>
     </div>
 
   <div id="profile">
     <div class="effect">
-      <i class="fa fa-child fa-5x"></i>
+      <span class="fa fa-child fa-5x">
     <img src="<%= asset_path "/assets/cdore.png" %>" alt=""  height="500px" id="ore" class="cdore"/>
     <img src="<%= asset_path "/assets/bdore.png" %>" alt=""  height="500px" id="ore" class="bdore"/>
+  </span>
     </div>
       <div id="ptext">
         <h1 class="hello">Hello</h1>
@@ -116,18 +119,7 @@
          </td>
 　　　  </tr>
 <tr>
-　　　    <td>
-　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A0xzSCTKG7drUQO5Vy6E3Y5" width="300" height="380" frameborder="0" allowtransparency="true" ></iframe>
-　　　    </td>
-　　　    <td>
-　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A7vBBL9qR7sgvb0vD04iLTk" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-　　　    </td>
-　　　    <td>
-　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A00GfiT5AxTNSDQihPeMRkM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-　　　    </td>
-         <td>
-           <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A0NkbijHq0V6SmI28GpZFYm" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-         </td>
+　　　
 　　　  </tr>
 　　　</table>
 
@@ -135,7 +127,21 @@
   </div>
 
   </div>
+
 </body>
 <header>
-
+    <h1>title</h1>
 </header>
+<nav>
+  <ul>
+    <li><a href="#tab1" >
+        <img src="<%= asset_path "/assets/book.png" %>" alt="" />
+    </a></li>
+    <li class="music"><a href="#tab2">
+      <%= link_to image_tag('/assets/music.png', { :border => '0', :alt => 'リンクです'}) %>
+    </a></li>
+  </ul>
+</nav>
+
+<section class="tab" id="tab1"> <p>Section number 1</p> </section>
+<section class="tab" id="tab2"> <p>Section number 2</p> </section>
