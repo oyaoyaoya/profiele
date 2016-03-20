@@ -1,5 +1,7 @@
 <script type="javascript/applicationjs">
 </script>
+<head>
+</head>
 <body>
 
   <div id="wrapper">
@@ -23,6 +25,7 @@
           </a></li>
         </ul>
       </div>
+
       <div class="logo">
       <img src="<%= asset_path "/assets/LOGO.png" %>" alt="" id="logo"/>
     </div>
@@ -74,74 +77,98 @@
     <h3>Since 2016~
     </h3>
   </div>
-  <div id="portfoliopic1">
-    <div class="firstpp1">
-        <img src="<%= asset_path "/assets/wood.png"%>" id="wood" />
-    </div>
-    <div class="firstpp2">
-        <img src="<%= asset_path "/assets/fam.png"%>" id="fam" />
-    </div>
-  </div>
-  <div id="portfoliopic2">
-    <div class="secondpp1">
-      <img src="<%= asset_path "/assets/sugi.png"%>" id="sugi" />
-    </div>
-    <div class="secondpp2">
-      <img src="<%= asset_path "/assets/kunugi.png"%>" id="kunugi" />
-    </div>
-  </div>
-  <div id="favo">
-　　<ul id="favomenu">
-　　  <li class="book">
-　　    <img src="<%= asset_path "/assets/book.png"%>" id="book"/>
-　　  </li>
-　　  <li class="music">
-　　    <img src="<%= asset_path "/assets/music.png"%>" id="music"/>
-　　  </li>
-　　</ul>
-    <div id="favocont">
-      <div class="amazon">
 
+  <div class="accordian">
+  	<ul>
+  		<li>
+  			<div class="image_title">
+  				<p>KungFu Panda</p>
+          <%= link_to"すぎ",""%>
+  			</div>
+  			<a href="#">
+  				<%= image_tag("sugi.png") %>
+  			</a>
+  		</li>
+  		<li>
+  			<div class="image_title">
+  				<a href="#">Toy Story 2</a>
+  			</div>
+  			<a href="#">
+  				<%= image_tag("kunugi.png") %>
+  			</a>
+  		</li>
+  		<li>
+  			<div class="image_title">
+  				<a href="#">Wall-E</a>
+  			</div>
+  			<a href="#">
+  				<%= image_tag("sugi.png") %>
+  			</a>
+  		</li>
+  		<li>
+  			<div class="image_title">
+  				<a href="#">Up</a>
+  			</div>
+  			<a href="#">
+  				<%= image_tag("kunugi.png") %>
+  			</a>
+  		</li>
+  		<li>
+  			<div class="image_title">
+  				<a href="#">Cars 2</a>
+  			</div>
+  			<a href="#">
+  				<%= image_tag("sugi.png") %>
+  			</a>
+  		</li>
+  	</ul>
+  </div>
+
+  <ul class="tabs">
+    <li>
+      <input name="tab" id="tab1" type="radio" checked />
+      <label for="tab1"><%= image_tag'book.png',:width=>'150',:height=>'auto'%></label>
+      <div class="contents tab1">
+        <table>
+        　　　  <tr>
+        　　　    <td>
+        　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A0xzSCTKG7drUQO5Vy6E3Y5" width="300" height="380" frameborder="0" allowtransparency="true" ></iframe>
+        　　　    </td>
+        　　　    <td>
+        　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A7vBBL9qR7sgvb0vD04iLTk" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        　　　    </td>
+        　　　    <td>
+        　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A00GfiT5AxTNSDQihPeMRkM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+        　　　    </td>
+                 <td>
+                   <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A0NkbijHq0V6SmI28GpZFYm" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                 </td>
+        　　　  </tr>
+        <tr>
+        　　　
+        　　　  </tr>
+        　　　</table>
       </div>
-　　　<table>
-　　　  <tr>
-　　　    <td>
-　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A0xzSCTKG7drUQO5Vy6E3Y5" width="300" height="380" frameborder="0" allowtransparency="true" ></iframe>
-　　　    </td>
-　　　    <td>
-　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A7vBBL9qR7sgvb0vD04iLTk" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-　　　    </td>
-　　　    <td>
-　　　      <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A00GfiT5AxTNSDQihPeMRkM" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-　　　    </td>
-         <td>
-           <iframe src="https://embed.spotify.com/?uri=spotify%3Atrack%3A0NkbijHq0V6SmI28GpZFYm" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
-         </td>
-　　　  </tr>
-<tr>
-　　　
-　　　  </tr>
-　　　</table>
+    </li>
+    <li>
+      <input name="tab" id="tab2" type="radio"/>
+      <label for="tab2"><%= image_tag'book.png',:width=>'150',:height=>'auto'%></label>
+      <div class="contents tab2">
+      </div>
+    </li>
+    <li>
+      <input name="tab" id="tab3" type="radio"/>
+      <label for="tab3"><%= image_tag'book.png',:width=>'150',:height=>'auto'%></label>
+      <div class="contents tab3">
+      </div>
+    </li>
+  </ul>
 
-    </div>
-  </div>
 
   </div>
+
+
 
 </body>
 <header>
-    <h1>title</h1>
 </header>
-<nav>
-  <ul>
-    <li><a href="#tab1" >
-        <img src="<%= asset_path "/assets/book.png" %>" alt="" />
-    </a></li>
-    <li class="music"><a href="#tab2">
-      <%= link_to image_tag('/assets/music.png', { :border => '0', :alt => 'リンクです'}) %>
-    </a></li>
-  </ul>
-</nav>
-
-<section class="tab" id="tab1"> <p>Section number 1</p> </section>
-<section class="tab" id="tab2"> <p>Section number 2</p> </section>
