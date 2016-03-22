@@ -1,27 +1,26 @@
-<script type="javascript/applicationjs">
-</script>
-<head>
-</head>
+
 <body>
 
   <div id="wrapper">
     <div id="top">
       <div id="menubar">
         <ul id="top_menu">
-          <li><a href="ho" class="cho">
+          <li><a href="#1" class="cho">
             <%= link_to image_tag('/assets/HO.png', { :border => '0', :alt => 'リンクです'}) %>
           </a></li>
-          <li class="about_me"><a href="aboutme" class="scrollable">
-            <%= link_to image_tag('/assets/ABOUT ME.png', { :border => '0', :alt => 'リンクです'}) %>
+          <li class="about_me">
+
+
+            <%= link_to image_tag('/assets/ABOUT ME.png', { :border => '0', :alt => 'リンクです'}) ,{:anchor =>"ppp"} %>
           </a></li>
           <li><a href="portfolio" class="scrollable">
-            <%= link_to image_tag('/assets/PORTFOLIO.png', { :border => '0', :alt => 'リンクです'}) %>
+            <%= link_to image_tag('/assets/PORTFOLIO.png', { :border => '0', :alt => 'リンクです'}) ,{:anchor =>"ddd"}%>
           </a></li>
           <li><a href="favorite" class="scrollable">
-            <%= link_to image_tag('/assets/FAVORITE.png', { :border => '0', :alt => 'リンクです'}) %>
+            <%= link_to image_tag('/assets/FAVORITE.png', { :border => '0', :alt => 'リンクです'}),{:anchor =>"fff"}  %>
           </a></li>
           <li class="contact"><a href="contact" class="scrollable">
-             <%= link_to image_tag('/assets/CONTACT.png', { :border => '0', :alt => 'リンクです'}) %>
+             <%= link_to image_tag('/assets/CONTACT.png', { :border => '0', :alt => 'リンクです'}),{:anchor =>"ccc"} %>
           </a></li>
         </ul>
       </div>
@@ -30,7 +29,7 @@
       <img src="<%= asset_path "/assets/LOGO.png" %>" alt="" id="logo"/>
     </div>
     </div>
-
+ <div id="ppp">
   <div id="profile">
     <div class="effect">
       <span class="fa fa-child fa-5x">
@@ -47,29 +46,31 @@
     <table id="plinkto">
       <tr id="linkall">
         <td class="plinkto">
-          <a class="linkall"><%= link_to image_tag('/assets/tw.png', { :border => '0', :alt => 'リンクです'}),  "http://rubyonrails.org/" %></a>
+          <a class="linkall"><%= link_to image_tag('/assets/tw.png', { :border => '0', :alt => 'リンクです'}),  "https://twitter.com/HayatoHayatooo" %></a>
         </td>
         <td class="plinkto">
-          <a class="linkall"><%= link_to image_tag('/assets/fb.png', { :border => '0', :alt => 'リンクです'}),  "http://rubyonrails.org/" %></a>
+          <a class="linkall" ><%= link_to image_tag('/assets/fb.png', { :border => '0', :alt => 'リンクです'}),  "https://www.facebook.com/hayato.oyanagi.7" %></a>
         </td>
         <td class="plinkto">
-          <a class="linkall"><%= link_to image_tag('/assets/inst.png', { :border => '0', :alt => 'リンクです'}),  "http://rubyonrails.org/" %></a>
+          <a class="linkall"><%= link_to image_tag('/assets/inst.png', { :border => '0', :alt => 'リンクです'}),  "https://www.instagram.com/_o_y_a/" %></a>
         </td>
         <td class="plinkto">
-          <a class="linkall"><%= link_to image_tag('/assets/lin.png', { :border => '0', :alt => 'リンクです'}),  "http://rubyonrails.org/" %></a>
+          <a class="linkall"><%= link_to image_tag('/assets/lin.png', { :border => '0', :alt => 'リンクです'}),  "https://www.linkedin.com/in/hayato-oyanagi-a227b910a?trk=nav_responsive_tab_profile_pic" %></a>
         </td>
         <td class="plinkto">
-          <a class="linkall"><%= link_to image_tag('/assets/git.png', { :border => '0', :alt => 'リンクです'}),  "http://rubyonrails.org/" %></a>
+          <a class="linkall"><%= link_to image_tag('/assets/git.png', { :border => '0', :alt => 'リンクです'}),  "https://github.com/oyaoyaoya" %></a>
         </td>
         <td class="plinkto">
-          <a class="linkall"><%= link_to image_tag('/assets/sc.png', { :border => '0', :alt => 'リンクです'}),  "http://rubyonrails.org/" %></a>
+          <a class="linkall"><%= link_to image_tag('/assets/sc.png', { :border => '0', :alt => 'リンクです'}),  "https://soundcloud.com/hayato-oyanagi" %></a>
         </td>
       </tr>
     </table>
    </div>
   </div>
+</div>
 
 
+<div id="ddd">
   <div id="portfolioscript">
     <h2>
     Portfolio
@@ -82,8 +83,8 @@
   	<ul>
   		<li>
   			<div class="image_title">
-  				<p>KungFu Panda</p>
-          <%= link_to"すぎ",""%>
+　　　　　　<%= link_to image_tag('/assets/sugi.png', { :border => '0', :alt => 'リンクです'}),  "http://www.slideshare.net/HayatoOyanagi/ss-59888074" %>
+          <%= link_to"",""%>
   			</div>
   			<a href="#">
   				<%= image_tag("sugi.png") %>
@@ -91,7 +92,6 @@
   		</li>
   		<li>
   			<div class="image_title">
-  				<a href="#">Toy Story 2</a>
   			</div>
   			<a href="#">
   				<%= image_tag("kunugi.png") %>
@@ -99,7 +99,6 @@
   		</li>
   		<li>
   			<div class="image_title">
-  				<a href="#">Wall-E</a>
   			</div>
   			<a href="#">
   				<%= image_tag("sugi.png") %>
@@ -107,7 +106,6 @@
   		</li>
   		<li>
   			<div class="image_title">
-  				<a href="#">Up</a>
   			</div>
   			<a href="#">
   				<%= image_tag("kunugi.png") %>
@@ -115,7 +113,6 @@
   		</li>
   		<li>
   			<div class="image_title">
-  				<a href="#">Cars 2</a>
   			</div>
   			<a href="#">
   				<%= image_tag("sugi.png") %>
@@ -123,11 +120,15 @@
   		</li>
   	</ul>
   </div>
+</div>
 
+
+<div id="fff">
+ <div id="fav">
   <ul class="tabs">
     <li>
       <input name="tab" id="tab1" type="radio" checked />
-      <label for="tab1"><%= image_tag'book.png',:width=>'150',:height=>'auto'%></label>
+      <label for="tab1"><%= image_tag'music.png',:width=>'200',:height=>'auto'%></label>
       <div class="contents tab1">
         <table>
         　　　  <tr>
@@ -152,23 +153,17 @@
     </li>
     <li>
       <input name="tab" id="tab2" type="radio"/>
-      <label for="tab2"><%= image_tag'book.png',:width=>'150',:height=>'auto'%></label>
+      <label for="tab2"><%= image_tag'book.png',:width=>'200',:height=>'auto'%></label>
       <div class="contents tab2">
       </div>
     </li>
-    <li>
-      <input name="tab" id="tab3" type="radio"/>
-      <label for="tab3"><%= image_tag'book.png',:width=>'150',:height=>'auto'%></label>
-      <div class="contents tab3">
-      </div>
-    </li>
+
   </ul>
+</div>
+</div>
 
-
-  </div>
-
-
-
+  <footer id="ccc">
+    <img src="<%= asset_path "/assets/footer.png" %>" alt="" id="footer"/>
+  </footer>
+</div>
 </body>
-<header>
-</header>
