@@ -67,10 +67,17 @@ top: 150px;
 //aboutme
 #ore{
   margin-top: 100px;
+    position:relative;
+    left: -290px;
+}
+#ure{
+  margin-top: 100px;
+    position:relative;
+    left: -290px;
 }
 
 .cdore{
-  position: relative;
+  position:relative;
   z-index: 2;
   float: left;
 
@@ -203,6 +210,7 @@ default width = 800/5 = 160px;
 	overflow: hidden;
   background-color: #ffffff;
 	/*Time for some styling*/
+
   margin: 0 auto 50px auto ;
 	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
 	-webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.35);
@@ -319,6 +327,14 @@ label{
   margin-right: -40px;
 }
 
+.amazon{
+  text-align: center;
+}
+.contentstab2{
+  margin: 0 auto;
+  float:left;
+  text-align: center;
+}
 //footer
 
 #footer{
