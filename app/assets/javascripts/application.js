@@ -26,7 +26,6 @@ var mlink = $("#mlink");
 var blink =$("#blink");
 
 mlink.on('click',function(){
-  alert(mlink);
   $(this).css('-webkit-filter','grayscale(70%)');
   blink.css('-webkit-filter','');
 });
