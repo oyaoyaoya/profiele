@@ -2,7 +2,7 @@
   <div id="wrapper">
     <div id="top">
     <div topmenu>
-        <%= image_tag('bg3.png', {:id => 'topimg'}) %>
+        <%= image_tag('bg3.png', {:id => 'topimg', :width => 'auto', :height => '100%'}) %>
     </div>
       <div id="menubar">
         <ul id="top_menu">
@@ -27,7 +27,7 @@
       </div>
 
       <div class="logo">
-      <%= image_tag("LOGO.png") alt="" id="logo" %>
+      <%= image_tag('LOGO.png', {:id => 'logo'}) %>
     </div>
     </div>
  <div id="ppp">
@@ -163,9 +163,11 @@
 </div>
 </div>
 
+
   <footer id="ccc">
-    <%= image_tag("footer.png"),:id=>'footer' %>
+     <%= image_tag'sugi.png',:width=>'100%',:height=>'200px'%>
   </footer>
+
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <%= javascript_include_tag "application" %>
