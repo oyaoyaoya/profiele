@@ -4,35 +4,35 @@
       <div id="menubar">
         <ul id="top_menu">
           <li><a href="#1" class="cho">
-            <%= image_tag('/assets/HO.png', { :border => '0', :alt => 'リンクです'}) %>
+            <%= image_tag('HO.png', { :border => '0', :alt => 'リンクです'}) %>
           </a></li>
           <li class="about_me">
 
 
-            <%= image_tag('/assets/ABOUT ME.png', { :border => '0', :alt => 'リンクです'}) ,{:anchor =>"ppp"} %>
+            <%= link_to image_tag('ABOUT ME.png', { :border => '0', :alt => 'リンクです'}) ,{:anchor =>"ppp"} %>
           </a></li>
           <li><a href="portfolio" class="scrollable">
-            <%= image_tag('/assets/PORTFOLIO.png', { :border => '0', :alt => 'リンクです'}) ,{:anchor =>"ddd"}%>
+            <%= link_to image_tag('PORTFOLIO.png', { :border => '0', :alt => 'リンクです'}) ,{:anchor =>"ddd"}%>
           </a></li>
           <li><a href="favorite" class="scrollable">
-            <%= image_tag('/assets/FAVORITE.png', { :border => '0', :alt => 'リンクです'}),{:anchor =>"fff"}  %>
+            <%= link_to image_tag('FAVORITE.png', { :border => '0', :alt => 'リンクです'}),{:anchor =>"fff"}  %>
           </a></li>
           <li class="contact"><a href="contact" class="scrollable">
-             <%=  image_tag('/assets/CONTACT.png', { :border => '0', :alt => 'リンクです'}),{:anchor =>"ccc"} %>
+             <%= link_to image_tag('CONTACT.png', { :border => '0', :alt => 'リンクです'}),{:anchor =>"ccc"} %>
           </a></li>
         </ul>
       </div>
 
       <div class="logo">
-      <img src="<%= asset_path "/assets/LOGO.png" %>" alt="" id="logo"/>
+      <img src="<%= image_tag "LOGO.png" %>" alt="" id="logo"/>
     </div>
     </div>
  <div id="ppp">
   <div id="profile">
 
 
-    <img src="<%= asset_path "/assets/cdore.png" %>" alt=""  height="500px" id="ore" class="cdore"/>
-    <img src="<%= asset_path "/assets/bdore.png" %>" alt=""  height="500px" id="ure" class="bdore"/>
+    <img src="<%= asset_path "cdore.png" %>" alt=""  height="500px" id="ore" class="cdore"/>
+    <img src="<%= asset_path "bdore.png" %>" alt=""  height="500px" id="ure" class="bdore"/>
 
       <div id="ptext">
         <h1 class="hello">Hello</h1>
@@ -161,7 +161,7 @@
 </div>
 
   <footer id="ccc">
-    <img src="<%= asset_path "/assets/footer.png" %>" alt="" id="footer"/>
+    <%= image_tag'footer.png',:id=>'footer'%>
   </footer>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
