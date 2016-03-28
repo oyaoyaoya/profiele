@@ -13,24 +13,12 @@ body{
 .cho{
   padding: 15px;
 }
-#top{
-  background-size: cover;
-  width: auto;
-  height: 100vh;
-  margin:0;
-  padding:0;
-}
-#topimg{
-  background-size: cover;
-  width: auto;
-  height: 100vh;
-  margin:0;
-  padding:0;
-}
+
 
 #menubar{
   width: 100%;
   padding-top: 15px;
+  background-color: #616161;
 }
 
 ul{
@@ -65,6 +53,8 @@ li{
 
 .logo{
   text-align: center;
+  background-color: #616161;
+  height: 450px;
 }
 #logo{
 position: relative;
@@ -336,12 +326,26 @@ label{
 
 .amazon{
   text-align: center;
+
 }
-.contentstab2{
+div .contentstab2{
   margin: 0 auto;
   float:left;
-  text-align: center;
+  height:600px;
+  width: 1000px;
+  display: table-cell;
+	vertical-align: middle;
+    text-align: center;
 }
+
+.contentamazon{
+  text-align: center;
+  display: table-cell;
+	vertical-align: middle;
+  bottom: 100px;
+  left: 500px;
+}
+
 //footer
 
 #footer{
