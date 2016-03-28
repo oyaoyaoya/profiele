@@ -1,3 +1,5 @@
+Rails.application.config.assets.precompile += %w( git.png )
+Rails.application.config.assets.precompile += %w( f1.png )
 # Be sure to restart your server when you modify this file.
 
 # Version of your assets, change this if you want to expire all your assets.
