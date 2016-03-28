@@ -35,12 +35,12 @@
 
     <img src="<%= asset_path "cdore.png" %>" alt=""  height="500px" id="ore" class="cdore"/>
     <img src="<%= asset_path "bdore.png" %>" alt=""  height="500px" id="ure" class="bdore"/>
-
-      <div id="ptext">
+<div id="pright">
+  <div id="ptext">
         <h1 class="hello">Hello</h1>
         <p1 class="p1text">Im Hayato Oyanagi,Japanese Engeneer and Designer
         </p1>
-      </div>
+  </div>
    <div id="plink">
     <table id="plinkto">
       <tr id="linkall">
@@ -65,6 +65,8 @@
       </tr>
     </table>
    </div>
+</div>
+
   </div>
 </div>
 
@@ -156,9 +158,9 @@
 
       <div class="contentstab2">
         <div class="grid">
-         <div class="grid-item"></div>
-         <div class="grid-item"></div>
-         <div class="grid-item"></div>
+         <div class="grid-item"><%= image_tag'book.png',:width=>'200',:height=>'auto',:id=>'blink'%></div>
+         <div class="grid-item"><%= image_tag'book.png',:width=>'200',:height=>'auto',:id=>'blink'%></div>
+         <div class="grid-item"><%= image_tag'book.png',:width=>'200',:height=>'auto',:id=>'blink'%></div>
         </div>
       </div>
     </li>
@@ -175,5 +177,4 @@
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <%= javascript_include_tag "application" %>
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/minigrid/2.0.0/minigrid.min.js"></script>
 </body>

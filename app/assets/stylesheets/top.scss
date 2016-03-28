@@ -87,6 +87,10 @@ top: 150px;
   float: left;
 
 }
+
+#pright{
+    display: none;
+}
 #ptext{
   position: relative;
   width: 550px;
@@ -358,4 +362,17 @@ div .contentstab2{
 }
 #ccc{
 height:400px;
+}
+
+@-webkit-keyframes fadein {
+	0%{
+		opacity:0;
+		height:0px;
+	}
+	5% {
+		height:200px;
+	}
+	100% {
+		opacity:1;
+	}
 }
