@@ -16,6 +16,7 @@ $(function(){
     var fixed = function(){
       menubar.css({'position':'fixed','z-index':'5','background':'rgba(255,255,255,0,6);',
     });
+      menubar.fadeIn(2000);
     }
 
 

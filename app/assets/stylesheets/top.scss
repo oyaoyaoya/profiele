@@ -19,6 +19,7 @@ body{
   width: 100%;
   padding-top: 15px;
   background-color: #616161;
+  display: none;
 }
 
 ul{
@@ -276,10 +277,11 @@ body {
     background: #ffffff;
 }
 
+
 //タブ(favo)
 
 #fav{
-  background-color: #3c3c3c;
+  background-color: #616161;
 }
 
 .tabs {
@@ -300,7 +302,7 @@ body {
     cursor: pointer;
     padding: 10px;
     line-height: 20px;
-    background-color: #3c3c3c;
+    background-color: #616161;
     color: #ffffff;
 }
 .tabs label:hover {
@@ -308,7 +310,7 @@ body {
     color: #000000;
 }
 .tabs input[type=radio]:checked + label {
-    background-color: #3c3c3c;
+    background-color: #616161;
     color: #000000;
 }
 .tabs .contents {
