@@ -83,39 +83,19 @@
   <div class="accordian" >
   	<ul>
       <li>
-        <div class="image_title">
-        </div>
-        <a href="#">
-          <%= image_tag("hoiku.png") %>
-        </a>
+          <%= link_to image_tag('hoiku.png', { :border => '0', :alt => 'リンクです'}),  "https://www.linkedin.com/in/hayato-oyanagi-a227b910a?trk=nav_responsive_tab_profile_pic", {:class => 'linkall', :target => '_blank'} %>
       </li>
   		<li>
-  			<div class="image_title">
-  			</div>
-  			<a href="#">
   				<%= image_tag("ringyo.png") %>
-  			</a>
   		</li>
   		<li>
-  			<div class="image_title">
-  			</div>
-  			<a href="#">
-  				<%= image_tag("sugi.png") %>
-  			</a>
+  				<%= image_tag("sugi.png",{:target => "_blank"}) %>
   		</li>
   		<li>
-  			<div class="image_title">
-  			</div>
-  			<a href="#">
   				<%= image_tag("kunugi.png") %>
-  			</a>
   		</li>
   		<li>
-  			<div class="image_title">
-  			</div>
-  			<a href="#">
   				<%= image_tag("sugi.png") %>
-  			</a>
   		</li>
   	</ul>
   </div>
