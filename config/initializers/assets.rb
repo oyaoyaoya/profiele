@@ -1,3 +1,4 @@
+Rails.application.config.assets.precompile += %w( 404.png )
 Rails.application.config.assets.precompile += %w( git.png )
 Rails.application.config.assets.precompile += %w( f1.png )
 Rails.application.config.assets.precompile += %w( hoiku.png )
