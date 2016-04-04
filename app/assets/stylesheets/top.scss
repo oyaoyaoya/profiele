@@ -17,7 +17,6 @@ body{
 
 #menubar{
   width: 100%;
-  padding-top: 15px;
   background-color: #616161;
   display: none;
 }
@@ -146,8 +145,8 @@ top: 150px;
   padding-left: -2px;
 }
 
-#linka{
-  padding-left: 13px;
+.linkall{
+  padding-left: 15px
 }
 
 #ddd div{
@@ -210,7 +209,6 @@ default width = 800/5 = 160px;
 .accordian {
 	width: 80vw; height: 70vh;
 	overflow: hidden;
-  background-color: #ffffff;
 	/*Time for some styling*/
 
   margin: 0 auto 50px auto ;
@@ -279,6 +277,17 @@ body {
 
 
 //タブ(favo)
+#mlink,
+#blink{
+  text-align: center;
+  text-decoration: none;
+   display: block;
+   width: 150px;
+   color: #fff;
+   background-color:#1c454d;
+    padding: 0.8rem;
+     border-bottom: 3px solid rgba(0,0,0,0.2);
+}
 
 #fav{
   background-color: #616161;
@@ -319,7 +328,7 @@ body {
     top:30px;
     left: 0;
     padding: 10px;
-    background: #3c3c3c;
+    background: #616161;
 }
 .tabs input[type=radio]:checked + label + .contents{
     display: block;
@@ -329,28 +338,17 @@ body {
 label{
   margin-right: -40px;
 }
-
-.amazon{
-  text-align: center;
-
-}
+/*
 div .contentstab2{
   margin: 0 auto;
-  float:left;
   height:600px;
   width: 1000px;
   display: table-cell;
 	vertical-align: middle;
     text-align: center;
-}
+}*/
 
-.contentamazon{
-  text-align: center;
-  display: table-cell;
-	vertical-align: middle;
-  bottom: 100px;
-  left: 500px;
-}
+//book
 
 //footer
 
@@ -377,4 +375,8 @@ height:400px;
 	100% {
 		opacity:1;
 	}
+}
+
+#back-to-top{
+  transform :rotate(-90deg);
 }

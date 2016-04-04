@@ -10,8 +10,6 @@ $(function(){
   $(window).on('scroll',function(){
   	// スクロール量を取得
   	var y = $(window).scrollTop();// Y方向 (縦)
-    console.log(y);	//所得済み
-
     //固定
     var fixed = function(){
       menubar.css({'position':'fixed','z-index':'5','background':'rgba(255,255,255,0,6);',
@@ -66,5 +64,25 @@ blink.on('click',function(){
    $(this).css('-webkit-filter','grayscale(70%)');
    mlink.css('-webkit-filter','');
 });
+
+//topに戻る↑
+    var btt =$("#back-to-top");
+    //back-to-topを消す
+    btt.hide();
+    //スクロールがある程度進んだら、back-to-topを表示する。スクロールが戻ったら、非表示
+    $(window).scroll(function(){
+      if ($(this).scrollTop()>300){
+          btt.fadeIn();
+      }else{
+          btt.fadeOut();
+      }
+    });
+    //back-to-topがクリックされたら、上に戻る
+    $("#back-to-top a").click(function(){
+      $('body').animate({
+          scrollTop:0
+      },500);
+      return false;
+    });
 
 });

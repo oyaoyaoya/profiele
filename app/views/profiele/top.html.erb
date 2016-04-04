@@ -1,8 +1,10 @@
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <%= javascript_include_tag "application" %>
+</head>
 <body>
   <div id="wrapper">
     <div id="top">
-    <div id="topmenu">
-    </div>
       <div id="menubar">
         <ul id="top_menu">
           <li><a href="#1" class="cho">
@@ -24,7 +26,6 @@
           </a></li>
         </ul>
       </div>
-
       <div class="logo">
       <%= image_tag('LOGO.png', {:id => 'logo'}) %>
     </div>
@@ -83,10 +84,10 @@
   <div class="accordian" >
   	<ul>
       <li>
-          <%= link_to image_tag('hoiku.png', { :border => '0', :alt => 'リンクです'}),  "http://www.slideshare.net/HayatoOyanagi/ss-59888074", {:class => 'linkall', :target => '_blank'} %>
+          <%= link_to image_tag('hoiku.png', { :border => '0', :alt => 'リンクです'}),  "http://www.slideshare.net/HayatoOyanagi/ss-59888074", { :target => '_blank'} %>
       </li>
   		<li>
-  			<%= link_to image_tag('ringyo.png', { :border => '0', :alt => 'リンクです'}),  "http://www.slideshare.net/HayatoOyanagi/ss-60012148", {:class => 'linkall', :target => '_blank'} %>
+  			<%= link_to image_tag('ringyo.png', { :border => '0', :alt => 'リンクです'}),  "http://www.slideshare.net/HayatoOyanagi/ss-60012148", { :target => '_blank'} %>
   		</li>
   		<li>
   				<%= image_tag("404.png",{:target => "_blank"}) %>
@@ -107,7 +108,9 @@
   <ul class="tabs">
     <li>
       <input name="tab" id="tab1" type="radio" />
-      <label for="tab1" ><%= image_tag'music.png',:width=>'200',:height=>'auto', :id=>'mlink'%></label>
+      <label for="tab1" >
+        <a id="mlink">MUSIC</a>
+        </label>
       <div class="contents tab1">
         <table>
         　　　  <tr>
@@ -132,23 +135,25 @@
     </li>
     <li>
       <input name="tab" id="tab2" type="radio"/>
-      <label for="tab2" ><%= image_tag'book.png',:width=>'200',:height=>'auto',:id=>'blink'%></label>
+      <label for="tab2" >
+        <a id="blink">
+SNEAKERS
+        </a></label>
 
       <div class="contentstab2">
-
       </div>
     </li>
 
   </ul>
 </div>
 </div>
-
-
+<div id="back-to-top" style="position:fixed;right:5px;bottom:5px;">
+    <%= link_to image_tag('arrow1.png', { :right => '10px', :bottom => '10px', :position =>'fixed'})%>
+</div>
   <footer id="ccc">
       <%= image_tag('f1.png', :id => "f1") %>
   </footer>
 
 </div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<%= javascript_include_tag "application" %>
+
 </body>
